@@ -1,0 +1,17 @@
+<div class="container">
+  <div
+    class="container-item"
+    infiniteScroll
+    (scrolled)="this.baseApiService.loadMore()"
+  >
+    @for (card of baseApiService.showList(); track $index) {
+    <div class="item">
+      <img
+        [src]="card.images.preview_webp.url"
+        [alt]="card.title"
+        loading="lazy"
+      />
+    </div>
+    }
+  </div>
+</div>

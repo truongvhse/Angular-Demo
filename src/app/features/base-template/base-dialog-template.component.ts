@@ -38,16 +38,16 @@ import { MatDividerModule } from '@angular/material/divider';
     FormsModule,
     MatDividerModule,
   ],
-  template: ` <h1 mat-dialog-title>{{ baseApiService.typeDialog() }}</h1>
+  template: ` <h1 mat-dialog-title>a</h1>
     <mat-dialog-content>
       <mat-form-field>
         <mat-label>Output 1</mat-label>
-        <input matInput [(ngModel)]="baseApiService.output1" />
+        <input matInput />
       </mat-form-field>
       <mat-divider> </mat-divider>
       <mat-form-field>
         <mat-label>Output 2</mat-label>
-        <input matInput [(ngModel)]="baseApiService.output2" />
+        <input matInput />
       </mat-form-field>
     </mat-dialog-content>
     <mat-dialog-actions>
